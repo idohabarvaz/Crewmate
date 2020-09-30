@@ -523,7 +523,11 @@ async def changeprefix(ctx, prefix):
 
 
 
+with open('prefixes.json', 'r') as f:
+    prefixx = json.load(f)
 
+
+TOKEN = prefixx["123"]
 
 
 
@@ -628,7 +632,7 @@ async def help(ctx):
 
 
 
-bot.run("NzU5NDI5MzAyOTE4ODQwMzkx.X29Xpw.DcxAHOdczi4DQjjsGEvLf7NNwfQ")
+bot.run(TOKEN)
 
 
 
